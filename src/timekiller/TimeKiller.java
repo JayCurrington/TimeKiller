@@ -349,8 +349,11 @@ public class TimeKiller extends JFrame implements Runnable {
 
 class Window {
     
-    static final int WINDOW_WIDTH = 1920;
-    static final int WINDOW_HEIGHT = 1080;
+    static Dimension sz = Toolkit.getDefaultToolkit().getScreenSize();
+
+    
+    static final int WINDOW_WIDTH = 1280;
+    static final int WINDOW_HEIGHT = 720;
     static final int XBORDER = 0;
     static final int YBORDER = 0;
     static final int WINDOW_BORDER = 0;
@@ -359,6 +362,13 @@ class Window {
     static int ysize = -1;   
     
  /////////////////////////////////////////////////////////////////////////
+    public Window(){
+        if (WINDOW_WIDTH!=1920){
+            
+        }
+        //1080
+        
+    }
     public static int getX(int x) {
         return (x + XBORDER);
     }

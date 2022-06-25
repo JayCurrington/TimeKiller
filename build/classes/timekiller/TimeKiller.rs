@@ -1,6 +1,0 @@
-timekiller.Window
-timekiller.TimeKiller
-timekiller.CurrentRoom
-timekiller.Character
-timekiller.Item
-timekiller.Inventory
